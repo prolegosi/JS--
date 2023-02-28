@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+<script>
+
+function Accumulator(sv){
+    this.value = sv;
+    this.read = function(){
+        a = +prompt();
+        this.value = this.value + a;
+    }
+
+
+}
+
+
+let accumulator = new Accumulator(1);
+
+
+accumulator.read(); 
+accumulator.read(); 
+
+alert(accumulator.value);
+
+</script>
+</html>

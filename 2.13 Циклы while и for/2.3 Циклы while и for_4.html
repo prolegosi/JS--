@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+  let num = prompt('Введите число');
+  let i = 2
+  while (i <= num){
+    for (let j = 2; j <= i; ++j){      
+      if (i % j == 0 ){
+        if(j != i){
+         break
+        }else{
+          alert(i)
+        }
+      }         
+    }    
+    i++
+  }
+</script>

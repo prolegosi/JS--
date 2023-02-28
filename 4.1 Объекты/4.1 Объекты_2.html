@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+
+let test = {};
+
+function is_true(obj){  
+  let key;
+  
+  for (key in obj){ 
+    return key == undefined
+  }
+  return key == undefined 
+}
+
+
+alert(is_true(test));
+
+test['name'] = 'John';
+
+alert(is_true(test));
+
+</script>

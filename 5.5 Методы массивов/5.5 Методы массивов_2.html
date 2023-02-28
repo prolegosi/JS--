@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="">
+ <script>
+	
+	let arr = [5, 3, 8, 1];
+	function filterRange(arr,a,b){
+		t_arr = [];
+		for (let i = 0; i < arr.length; i++){
+			if (+arr[i] >= a && + arr[i] <=b){
+				t_arr.push(+arr[i]);
+			}
+		}
+		return t_arr;
+
+
+	}
+let filtered = filterRange(arr, 1, 4);
+console.log(filtered)
+ </script>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="">
+<script>
+	function truncate(str, maxlength){
+		if (str.length > maxlength){
+			str = str.slice(0,maxlength - 3) + '...';
+		}
+		return str
+	}
+console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20))
+</script>
+</html>

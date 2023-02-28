@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="">
+    <script>
+        function getSecondsToTomorrow(){
+            let now = new Date();
+            let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1)
+            return tomorrow - now
+        }
+        console.log(getSecondsToTomorrow())
+
+    </script>
+</html>

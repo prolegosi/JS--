@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="">
+<script>
+
+function randomInteger(min, max){
+     while (true){
+          let a = Math.random();
+               if (a * 10 >= min && a * 10 < max){
+                    return Math.floor(a*10)
+               }          
+     }
+}
+console.log(randomInteger(1, 5))
+
+</script>
+</html>

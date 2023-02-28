@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="">
+    <script>
+        function getSecondsToday(){
+            let date = new Date;
+            let sec = date.getHours() * 60 * 60;
+            sec += date.getMinutes() * 60;
+            sec += date.getSeconds();
+            return sec;
+        }
+        console.log(getSecondsToday())
+
+    </script>
+</html>

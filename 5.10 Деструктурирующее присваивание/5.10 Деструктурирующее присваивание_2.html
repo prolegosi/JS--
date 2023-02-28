@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+ <script>
+    let salaries = {
+        "John": 100,
+        "Pete": 300,
+        "Mary": 250
+        };
+    function topSalary(obj){
+        let [a, b, c] = Object.entries(obj);
+        let max = [a[1], b[1], c[1]];
+        max.sort((a, b) => a - b);
+        max.reverse()
+        return max[0];
+    }
+
+console.log(topSalary(salaries));
+
+ </script>
+</html>

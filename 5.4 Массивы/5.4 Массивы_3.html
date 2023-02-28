@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+    <script>
+        
+    function getMaxSubSum(arr){
+        let a = 0;
+        let b = 0;
+        for (let i = 0; i < arr.length; i++){
+            if (+arr[i] > 0){
+                a += +arr[i];
+                if (a > b){
+                    b = a;
+                    a = 0
+                }
+            }
+        }
+        return b
+
+    }
+console.log(getMaxSubSum([-1, 2, 3, -9]));
+console.log(getMaxSubSum([2, -1, 2, 3, -9]));
+console.log(getMaxSubSum([-1, 2, 3, -9, 11]));
+console.log(getMaxSubSum([-2, -1, 1, 2]));
+console.log(getMaxSubSum([100, -9, 2, -3, 5]));
+console.log(getMaxSubSum([1, 2, 3]));       
+    </script>
+</html>

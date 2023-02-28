@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+<script>
+'use strict' 
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+
+function aclean(arr){
+	let umap = new Map();
+	let sort = []
+	for (let str of arr){
+		arr = str.toLowerCase().split('');
+		arr = arr.sort().join('');		
+		umap.set(arr, str)	
+	}
+
+	for (let j of umap){
+		sort.push(j[1]);
+	}
+
+	return sort;
+
+}
+
+
+console.log( aclean(arr) ); // "nap,teachers,ear" или "PAN,cheaters,era"
+
+
+</script>
+</html>

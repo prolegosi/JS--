@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="">
+<script>
+
+function isnum(){
+    while (true){
+       a = prompt();
+       if (Number.isNaN(a)){
+            break;
+       }else if (isFinite(a)){
+            alert(+a);
+            return +a;
+       }
+    }
+}
+isnum();
+</script>
+</html>

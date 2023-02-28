@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+
+function calc_pow(a,b){
+  return a**b
+}
+
+
+let x = prompt('введите число');
+let n = prompt('введите степень');
+if (n % 1 == 0 && n > 0){
+  alert(calc_pow(x,n))
+}else{
+  alert('неправильная степень')
+}
+
+</script>

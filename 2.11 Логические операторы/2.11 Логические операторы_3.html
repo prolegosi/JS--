@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+
+  
+  let login = prompt('Введите логин');
+  if (login == 'Админ'){
+
+    let pass = prompt('Введите пароль');
+    if(pass == 'Я главный'){
+        alert('Здравствуйте');
+      }else if(pass == undefined){
+        alert('Отменено');
+      }else{
+        alert('Не верный пароль');
+      }
+
+  }else if(login == undefined){
+    alert('Отменено');
+  }else{
+    alert('Я вас не знаю');
+  }  
+</script>

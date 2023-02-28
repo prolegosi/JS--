@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+<script>
+function Calculator(){
+    this.read = function(){
+        let num = prompt('введите два числа через пробел');
+        this.a = num.split(' ')[0];
+        this.b = num.split(' ')[1];   
+  },
+    this.sum = function(){
+        a = +this.a;
+        b = +this.b;
+        return  a + b
+    },
+    this.mul = function(){
+        a = +this.a;
+        b = +this.b;
+        return a * b;
+    }
+};
+
+let calculator = new Calculator();
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
+
+</script>
+</html>

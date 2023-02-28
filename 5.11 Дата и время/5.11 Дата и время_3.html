@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="">
+    <script>
+       let date = new Date(2012, 0, 3);  // 3 января 2012 года
+
+       function getLocalDay(date){
+            date = date.getDay();
+            
+            if (date == 0){
+                date = 7;
+            }
+          return date;
+        }
+
+       console.log(getLocalDay(date)); 
+
+    </script>
+</html>
