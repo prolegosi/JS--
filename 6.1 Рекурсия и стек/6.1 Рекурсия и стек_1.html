@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<script>
+    let num  = 10;
+    let out = 0;
+    
+
+    for (let i = 0; i <= num; ++i){
+        out += i;
+    }
+    console.log('cicle',out);
+    out = 0;
+    
+
+    function sum_in(num){             
+        if (!(num == 1)){  
+            num += sum_in(num-1);                
+            return num;             
+        }else{
+            return num;
+        }
+    }
+
+
+    out = sum_in(num);
+    console.log('recursion',out);
+    out = 0;
+
+    
+    out = ((1+num)/2) * num;
+    console.log('Sn',out)
+
+</script>

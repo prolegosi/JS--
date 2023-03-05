@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+    function printNumbers(from, to){
+        let now = from;
+        function interval(){
+            console.log(now);
+            if (now != to){
+                now++;                
+            }else{
+                clearInterval(setint)
+            }
+            
+        }
+        setint = setInterval(interval,1000)
+    }
+
+
+    
+
+printNumbers(3,6);
+
+</script>

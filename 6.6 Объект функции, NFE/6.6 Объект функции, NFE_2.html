@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+    function sum(a){
+        let s = a;
+        function other(b){
+            s += b;            
+            return other;
+        }
+        other.toString = function() {
+            return s;
+            };
+
+        return other;
+    }
+
+
+    alert(sum(1)(2));
+    alert(sum(1)(2)(3));
+    alert(sum(5)(-1)(2));
+    alert(sum(6)(-1)(-2)(-3));
+    alert(sum(0)(1)(2)(3)(4)(5));
+</script>
